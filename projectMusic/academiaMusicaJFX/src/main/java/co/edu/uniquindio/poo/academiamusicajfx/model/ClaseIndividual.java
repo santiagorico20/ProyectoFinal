@@ -33,5 +33,11 @@ public class ClaseIndividual extends Clase {
                 ", duracion=" + duracion +
                 '}';
     }
-
+    @Override
+    public void mostrarInformacion() {
+        System.out.println("Clase Individual:");
+        System.out.println("Tema: " + getTema());
+        System.out.println("Duración: " + getDuracion());
+        System.out.println("Identificación: " + getIdentificacion());
+    }
 }

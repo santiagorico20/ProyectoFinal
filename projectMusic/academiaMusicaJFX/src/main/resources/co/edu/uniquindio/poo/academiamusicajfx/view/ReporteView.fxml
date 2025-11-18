@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="co.edu.uniquindio.poo.academiamusicajfx.viewController.ReporteViewController"
+            style="-fx-background-color: #E8F5E9;">
+
+    <top>
+        <Label text="Generación de Reportes"
+               style="-fx-font-size: 22px; -fx-padding: 15 15 15 15; -fx-text-fill: #2E7D32;" />
+    </top>
+
+    <center>
+        <VBox spacing="15" alignment="CENTER">
+
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <Button text="Generar Reporte de Cursos"
+                    fx:id="btnReporteCursos"
+                    onAction="#generarReporteCursos"
+                    style="-fx-background-color: #2E7D32; -fx-text-fill: white;" />
+
+            <Button text="Generar Reporte de Estudiantes"
+                    fx:id="btnReporteEstudiantes"
+                    onAction="#generarReporteEstudiantes"
+                    style="-fx-background-color: #43A047; -fx-text-fill: white;" />
+
+        </VBox>
+    </center>
+
+</BorderPane>

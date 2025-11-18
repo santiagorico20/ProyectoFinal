@@ -44,5 +44,10 @@ public class ClaseGrupal extends Clase{
                 ", estudiantes=" + estudiantes +
                 '}';
     }
-
+    @Override
+    public void mostrarInformacion() {
+        System.out.println("Clase Grupal:");
+        System.out.println("Capacidad: " + getCapacidad());
+        System.out.println("Identificación: " + getIdentificacion());
+    }
 }

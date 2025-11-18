@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="root"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="co.edu.uniquindio.poo.academiamusicajfx.viewController.LoginViewController"
+            style="-fx-background-color: white;">
+
+    <center>
+        <VBox alignment="CENTER" spacing="20"
+              style="-fx-background-color: #E8F5E9; -fx-background-radius: 10;">
+
+            <!-- Padding seguro -->
+            <padding>
+                <Insets top="40" right="40" bottom="40" left="40"/>
+            </padding>
+
+            <Label text="Academia de Música"
+                   style="-fx-font-size: 28px; -fx-text-fill: #2E7D32; -fx-font-weight: bold;" />
+
+            <Label text="Iniciar Sesión"
+                   style="-fx-font-size: 20px; -fx-text-fill: #1B5E20;" />
+
+            <VBox alignment="CENTER" spacing="10">
+
+                <padding>
+                    <Insets top="20" right="20" bottom="20" left="20"/>
+                </padding>
+
+                <TextField fx:id="txtUsuario" promptText="Usuario" />
+                <PasswordField fx:id="txtContrasena" promptText="Contraseña" />
+
+                <Button fx:id="btnLogin"
+                        text="Ingresar"
+                        style="-fx-background-color: #2E7D32; -fx-text-fill: white; -fx-font-size: 14px; -fx-background-radius: 20;" />
+
+            </VBox>
+
+        </VBox>
+    </center>
+
+</BorderPane>

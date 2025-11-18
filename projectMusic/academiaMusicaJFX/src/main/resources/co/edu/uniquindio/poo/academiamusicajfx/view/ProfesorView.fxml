@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="co.edu.uniquindio.poo.academiamusicajfx.viewController.ProfesorViewController"
+            style="-fx-background-color: #E8F5E9;">
+
+    <top>
+        <Label text="Panel del Profesor"
+               style="-fx-font-size: 24px; -fx-padding: 20; -fx-text-fill: #2E7D32; -fx-font-weight: bold;" />
+    </top>
+
+    <center>
+        <VBox spacing="15" alignment="CENTER">
+
+            <Button text="Ver Clases Asignadas"
+                    fx:id="btnClases"
+                    onAction="#verClases"
+                    style="-fx-background-color: #2E7D32; -fx-text-fill: white;" />
+
+            <Button text="Registrar Asistencia"
+                    fx:id="btnAsistencia"
+                    onAction="#registrarAsistencia"
+                    style="-fx-background-color: #43A047; -fx-text-fill: white;" />
+
+            <Button text="Registrar Progreso"
+                    fx:id="btnNotas"
+                    onAction="#registrarProgreso"
+                    style="-fx-background-color: #1B5E20; -fx-text-fill: white;" />
+
+            <Button text="Disponibilidad Horaria"
+                    fx:id="btnHorario"
+                    onAction="#verHorario"
+                    style="-fx-background-color: #66BB6A; -fx-text-fill: white;" />
+
+        </VBox>
+    </center>
+
+</BorderPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="co.edu.uniquindio.poo.academiamusicajfx.viewController.EstudianteViewController"
+            style="-fx-background-color: #F1F8E9;">
+
+    <top>
+        <Label text="Panel del Estudiante"
+               alignment="CENTER"
+               style="-fx-font-size: 24px; -fx-padding: 20; -fx-text-fill: #2E7D32; -fx-font-weight: bold;" />
+    </top>
+
+    <center>
+        <VBox spacing="15" alignment="CENTER">
+
+            <Button text="Ver Cursos Inscritos"
+                    fx:id="btnCursos"
+                    onAction="#verCursos"
+                    style="-fx-background-color: #2E7D32; -fx-text-fill: white; -fx-background-radius: 10;" />
+
+            <Button text="Ver Progreso"
+                    fx:id="btnProgreso"
+                    onAction="#verProgreso"
+                    style="-fx-background-color: #43A047; -fx-text-fill: white; -fx-background-radius: 10;" />
+
+            <Button text="Ver Asistencia"
+                    fx:id="btnAsistencia"
+                    onAction="#verAsistencia"
+                    style="-fx-background-color: #66BB6A; -fx-text-fill: white; -fx-background-radius: 10;" />
+
+            <Button text="Solicitar Clase Individual"
+                    fx:id="btnSolicitarClase"
+                    onAction="#solicitarClase"
+                    style="-fx-background-color: #2E7D32; -fx-text-fill: white; -fx-background-radius: 10;" />
+
+            <Button text="Inscribirse en Cursos"
+                    fx:id="btnInscribir"
+                    onAction="#inscribirse"
+                    style="-fx-background-color: #1B5E20; -fx-text-fill: white; -fx-background-radius: 10;" />
+
+        </VBox>
+    </center>
+
+</BorderPane>

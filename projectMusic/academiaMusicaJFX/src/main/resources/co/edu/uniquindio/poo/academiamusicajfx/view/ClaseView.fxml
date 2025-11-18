@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="co.edu.uniquindio.poo.academiamusicajfx.viewController.ClaseViewController"
+            style="-fx-background-color: #F1F8E9;">
+
+    <top>
+        <Label text="Detalle de Clase"
+               style="-fx-font-size: 22px; -fx-text-fill: #1B5E20; -fx-padding: 20 20 20 20;" />
+    </top>
+
+    <center>
+        <VBox spacing="10">
+
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <Label fx:id="lblNombreClase" text="Nombre de la clase:"/>
+            <Label fx:id="lblProfesor" text="Profesor:"/>
+            <Label fx:id="lblHorario" text="Horario:"/>
+            <Label fx:id="lblEstudiantes" text="Estudiantes:"/>
+
+        </VBox>
+    </center>
+
+</BorderPane>

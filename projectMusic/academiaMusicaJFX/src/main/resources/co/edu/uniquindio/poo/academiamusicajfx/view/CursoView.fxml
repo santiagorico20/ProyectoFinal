@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="co.edu.uniquindio.poo.academiamusicajfx.viewController.CursoViewController"
+            style="-fx-background-color: #E8F5E9;">
+
+    <top>
+        <Label text="Listado de Cursos"
+               style="-fx-font-size: 22px; -fx-padding: 15 15 15 15; -fx-text-fill: #2E7D32;" />
+    </top>
+
+    <center>
+        <TableView fx:id="tablaCursos" prefHeight="400" prefWidth="600">
+            <columns>
+                <TableColumn fx:id="colNombre" text="Nombre"/>
+                <TableColumn fx:id="colProfesor" text="Profesor"/>
+                <TableColumn fx:id="colDuracion" text="Duración"/>
+            </columns>
+        </TableView>
+    </center>
+
+</BorderPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="co.edu.uniquindio.poo.academiamusicajfx.viewController.AdministradorViewController"
+            style="-fx-background-color: #F1F8E9;">
+
+    <top>
+        <Label text="Panel del Administrador"
+               style="-fx-font-size: 24px; -fx-padding: 20; -fx-text-fill: #1B5E20; -fx-font-weight: bold;" />
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" spacing="15">
+
+            <Button text="Crear Curso"
+                    fx:id="btnCrearCurso"
+                    style="-fx-background-color: #2E7D32; -fx-text-fill: white;" />
+
+            <Button text="Asignar Profesor"
+                    fx:id="btnAsignar"
+                    style="-fx-background-color: #43A047; -fx-text-fill: white;" />
+
+            <Button text="Gestionar Aulas"
+                    fx:id="btnAulas"
+                    style="-fx-background-color: #66BB6A; -fx-text-fill: white;" />
+
+            <Button text="Crear Clases Grupales"
+                    fx:id="btnGrupales"
+                    style="-fx-background-color: #1B5E20; -fx-text-fill: white;" />
+
+            <Button text="Ver Reportes"
+                    fx:id="btnReportes"
+                    style="-fx-background-color: #2E7D32; -fx-text-fill: white;" />
+
+        </VBox>
+    </center>
+
+</BorderPane>

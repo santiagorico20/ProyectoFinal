@@ -28,4 +28,5 @@ public abstract class Clase {
     public Horario getHorario() {
         return horario;
     }
+    public abstract void mostrarInformacion();
 }
